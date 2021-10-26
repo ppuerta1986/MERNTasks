@@ -5,7 +5,6 @@ const cors = require('cors');
 // crear el servidor
 const app = express();
 
-
 // Conectar a la base de datos
 conectarDB();
 
@@ -18,7 +17,6 @@ app.use(express.json({ extended: true}));
 
 // Puerto del app
 const port = process.env.PORT || 4000;
-
 
 // Importar Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
